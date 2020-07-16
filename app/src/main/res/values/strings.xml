@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="in_the_middle">In the middle</string>
+    <string name="middle_text">In the center</string>
 </resources>
