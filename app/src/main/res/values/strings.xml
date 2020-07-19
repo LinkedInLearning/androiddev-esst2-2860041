@@ -3,4 +3,5 @@
     <string name="email_address_hint">Your email address</string>
     <string name="your_password_hint">Your password</string>
     <string name="button_label">Submit</string>
+    <string name="message_text">email: %s, password: %s</string>
 </resources>
