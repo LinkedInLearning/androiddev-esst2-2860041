@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.button.setOnClickListener {
-            val email = binding.editTextTextEmailAddress.text.toString()
-            val password = binding.editTextNumberPassword.text.toString()
+            val email = binding.emailAddress.text.toString()
+            val password = binding.password.text.toString()
 
             Log.i("MainActivity", "onCreate: email: $email, password: $password")
         }
