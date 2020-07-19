@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="email_address_hint">Your email address</string>
-    <string name="your_password_hint">Your password</string>
     <string name="button_label">Submit</string>
-    <string name="message_text">email: %s, password: %s</string>
+    <string name="first_name_hint">Your first name</string>
+    <string name="favorite_color_hint">Your favorite color</string>
+    <string name="favorite_snack_hint">Your favorite snack</string>
 </resources>

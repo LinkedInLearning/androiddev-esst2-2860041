@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
     <Button
@@ -12,37 +13,50 @@
         android:layout_height="wrap_content"
         android:text="@string/button_label"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/favoriteSnackTextLayout" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        android:layout_width="409dp"
+        android:id="@+id/firstNameTextLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/emailAddress"
+            android:id="@+id/firstNameText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/email_address_hint"
-            android:inputType="textWebEmailAddress" />
+            android:hint="@string/first_name_hint"
+            android:inputType="textCapWords" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
-        android:layout_width="409dp"
+        android:id="@+id/favoriteColorTextLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-        app:passwordToggleEnabled="true">
+        app:layout_constraintTop_toBottomOf="@+id/firstNameTextLayout">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/password"
+            android:id="@+id/favoriteColorText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/your_password_hint"
-            android:inputType="numberPassword" />
+            android:hint="@string/favorite_color_hint"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/favoriteSnackTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favoriteColorTextLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/favoriteSnackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/favorite_snack_hint"
+            android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

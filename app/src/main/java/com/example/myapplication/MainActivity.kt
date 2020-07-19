@@ -17,19 +17,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.button.setOnClickListener {
-            val email = binding.emailAddress.text.toString()
-            val password = binding.password.text.toString()
-            val message = getString(R.string.message_text, email, password)
+            val firstName = binding.firstNameText.text.toString()
+            val favoriteColor = binding.favoriteColorText.text.toString()
+            val favoriteSnack = binding.favoriteSnackText.text.toString()
+            val message = "Hi $firstName, your favorite color is $favoriteColor " +
+                    "and your favorite snack is $favoriteSnack"
 
-            Snackbar.make(it, "I'm a Snackbar! 👋", Snackbar.LENGTH_INDEFINITE)
-                .setAction("Show info") { showMessage(message) }
-                .show()
-
-            Log.i("MainActivity", message)
+            Toast.makeText(this, message, Toast.LENGTH_LONG).show()
         }
-    }
-
-    private fun showMessage(message: String) {
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 }
