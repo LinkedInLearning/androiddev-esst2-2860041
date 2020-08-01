@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="switch_label">Display olive branch</string>
+    <string name="switch_label">Toggle images</string>
 </resources>

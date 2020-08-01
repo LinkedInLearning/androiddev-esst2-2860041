@@ -1,7 +1,8 @@
 package com.example.myapplication
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import coil.api.load
 import com.example.myapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -13,17 +14,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        supportActionBar?.let {
-            it.setDisplayShowHomeEnabled(true)
-            it.setDisplayUseLogoEnabled(true)
-            it.setLogo(R.drawable.ic_logo)
-        }
-
-        binding.oliveSwitch.setOnCheckedChangeListener { _, isChecked ->
+        binding.avatarSwitch.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked)
-                binding.oliveImage.setImageResource(R.drawable.olive_branch)
+                binding.avatarImage.load("https://bit.ly/android_dev_image1")
             else
-                binding.oliveImage.setImageResource(R.drawable.ic_olive_branch_vector)
+                binding.avatarImage.load("https://bit.ly/android_dev_image2")
         }
     }
 }
