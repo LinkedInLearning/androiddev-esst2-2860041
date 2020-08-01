@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/medium_olive_oil" />
+        app:srcCompat="@drawable/ic_olive_branch_vector" />
 
     <Switch
         android:id="@+id/oliveSwitch"

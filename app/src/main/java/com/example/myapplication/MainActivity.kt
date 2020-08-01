@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
             if (isChecked)
                 binding.oliveImage.setImageResource(R.drawable.olive_branch)
             else
-                binding.oliveImage.setImageResource(R.drawable.medium_olive_oil)
+                binding.oliveImage.setImageResource(R.drawable.ic_olive_branch_vector)
         }
     }
 }
