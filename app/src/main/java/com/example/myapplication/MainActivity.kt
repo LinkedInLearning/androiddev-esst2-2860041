@@ -13,6 +13,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.let {
+            it.setDisplayShowHomeEnabled(true)
+            it.setDisplayUseLogoEnabled(true)
+            it.setLogo(R.drawable.ic_logo)
+        }
+
         binding.oliveSwitch.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked)
                 binding.oliveImage.setImageResource(R.drawable.olive_branch)
