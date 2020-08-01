@@ -13,5 +13,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.oliveSwitch.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked)
+                binding.oliveImage.setImageResource(R.drawable.olive_branch)
+            else
+                binding.oliveImage.setImageResource(R.drawable.logo)
+        }
     }
 }
