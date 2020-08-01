@@ -9,6 +9,12 @@
         <item name="colorOnPrimary">@android:color/white</item>
         <item name="colorSecondary">@color/colorAccent</item>
         <item name="colorOnSecondary">@android:color/white</item>
+        <item name="materialButtonStyle">@style/MyButton</item>
     </style>
 
+    <style name="MyButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="icon">@drawable/ic_logo</item>
+        <item name="iconTint">@color/colorAccent</item>
+    </style>
 </resources>
