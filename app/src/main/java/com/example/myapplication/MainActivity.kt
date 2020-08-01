@@ -2,7 +2,6 @@ package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import com.example.myapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -18,7 +17,7 @@ class MainActivity : AppCompatActivity() {
             if (isChecked)
                 binding.oliveImage.setImageResource(R.drawable.olive_branch)
             else
-                binding.oliveImage.setImageResource(R.drawable.logo)
+                binding.oliveImage.setImageResource(R.drawable.medium_olive_oil)
         }
     }
 }
